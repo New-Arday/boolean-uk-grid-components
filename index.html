@@ -31,29 +31,63 @@
 
       /* Write CSS Here */
 
+      /* place-items: left;
+          background-color: brown; */
+
+      .box {
+      }
       .three-column-grid {
+      }
+      .two-column-grid-expand-two {
+        grid-template-columns: 100px auto;
+        gap: 5px;
+      }
+      .logo {
+        border: dotted cyan 2px;
       }
 
       .three-column-grid__expand-two {
+        grid-template-columns: 50px auto 50px;
+        gap: 5px;
       }
 
       .five-column-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
       }
 
       .center-grid {
+        display: grid;
+        grid-template-columns: 100px;
       }
 
       .centered {
+      }
+      .two-column-grid {
       }
 
       /* Grid within Grid Section */
       /* Practice re-using classes */
 
-      .two-column-grid {
+      .two-column-grid-expand-two {
+      }
+      .container {
+        display: grid;
+      }
+      .three-column-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
       }
     </style>
   </head>
   <body>
+    <div>
+      <h2>Two Column Grid (Icon Pattern)</h2>
+      <div class="container two-column-grid-expand-two">
+        <div class="logo"></div>
+        <div class="box expand"></div>
+      </div>
+    </div>
     <div>
       <h2>Three Column Grid</h2>
       <div class="container three-column-grid">
