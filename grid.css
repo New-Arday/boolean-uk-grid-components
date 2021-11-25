@@ -1,0 +1,141 @@
+body {
+  font-family: sans-serif;
+}
+:root {
+  --bdr: dashed orangered 1px;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto;
+  gap: 10px;
+  margin: 0;
+}
+
+.content div {
+  padding: 20px;
+  display: grid;
+  border: var(--bdr);
+}
+
+.nested {
+  grid-template-columns: 100px auto;
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+.nested p {
+  border: var(--bdr);
+  padding: 20px;
+  margin: 0;
+}
+.nes-3-col {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+.nes-3-col p {
+  border: var(--bdr);
+  padding: 20px;
+  margin: 0;
+}
+.nes-3-expan {
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 1fr;
+  gap: 5px;
+}
+.nes-3-expan p {
+  border: var(--bdr);
+  padding: 20px;
+  margin: 0;
+}
+
+.nes-5-grd {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5px;
+}
+
+.nes-5-grd p {
+  border: var(--bdr);
+  padding: 20px;
+  margin: 0;
+}
+
+.center-grd {
+  grid-template-columns: 200px;
+  grid-template-rows: 1fr;
+  gap: 5px;
+  justify-content: center;
+}
+.center-grd p {
+  border: var(--bdr);
+  padding: 20px;
+  margin: 0;
+}
+
+.grd-inside-grd1 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5px;
+}
+
+.grd-inside-grd1 p {
+  border: var(--bdr);
+  padding: 20px;
+  margin: 0;
+}
+
+.container-left {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5px;
+}
+
+.container-left p {
+  border: var(--bdr);
+  padding: 20px;
+  margin: 0;
+}
+.container-right {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5px;
+}
+
+.container-right p {
+  border: var(--bdr);
+  padding: 20px;
+  margin: 0;
+}
+.grd-num2 {
+  grid-template-columns: 100px 1fr 200px;
+  grid-template-rows: 1fr;
+  gap: 5px;
+}
+.grd-num2 p {
+  border: var(--bdr);
+  padding: 20px;
+  margin: 0;
+}
+
+.grd-rgt {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5px;
+}
+.grd-rgt p {
+  border: var(--bdr);
+  padding: 20px;
+  margin: 0;
+}
+.left-c {
+  grid-template-columns: auto;
+  grid-template-rows: 1fr;
+  gap: 5px;
+}
+
+.left-c p {
+  border: var(--bdr);
+  padding: 20px;
+  margin: 0;
+}
